@@ -40,11 +40,15 @@ const tubeMaterial = new THREE.MeshBasicMaterial({
   wireframe: true
 });
 const tube = new THREE.Mesh(tubeGeometry, tubeMaterial);
-scene.add(tube);
+// scene.add(tube);
 
+// Create edges (dots) from spline
+const edgesGeometry = new THREE.EdgesGeometry(tubeGeometry);
+const edgesMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });
+const edges = new THREE.LineSegments(edgesGeometry, edgesMaterial);
+scene.add(edges);
 
 function updateCamera(t) {
-  console.log('Time: ', t);
   const time = t * 0.1;
   const loopTime = 8 * 1000; // 20 seconds
   const progress = (time % loopTime) / loopTime;
