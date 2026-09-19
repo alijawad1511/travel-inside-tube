@@ -1,13 +1,18 @@
-# Travel Inside 3D Tube
+# Travel Inside a Glowing Tube
 
-Camera animation that flies through a 3D tube generated from a Catmull–Rom spline.
+A short ride through a twisting 3D tunnel. The camera never stops. Glowing lines, bright dots, and floating cubes slide past in the dark.
 
-![Scene screenshot](public/output_screenshot.png)
+**[Live Demo](https://alijawad1511.github.io/travel-inside-tube/)**
+
+![Inside the tube](public/output_screenshot.png)
 
 ## Run locally
 
 ```bash
+git clone https://github.com/alijawad1511/travel-inside-tube.git
+cd travel-inside-tube
 npm install
 npm run dev
 ```
+
 
